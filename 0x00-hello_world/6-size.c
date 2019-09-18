@@ -2,7 +2,7 @@
 int main(void)
 {
 
-char hcar; 
+char hcar;
 int integer;
 long int longint;
 long long int llint;
