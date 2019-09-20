@@ -1,15 +1,16 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Desc: alphabet lowercase game
+ *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-int a;
+  char asd;
 
-for (a = 'a'; a < 'z'; a++)
-putchar(a);
-putchar(10);
-return (0);
+  for (asd = 'a'; asd <= 'z'; asd++)
+    putchar(asd);
+  putchar('\n');
+  return (0);
 }
