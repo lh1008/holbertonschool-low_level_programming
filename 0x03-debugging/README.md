@@ -9,7 +9,7 @@
 
 ## Tasks
 
-_**0. Multiple mains **_
-_**1. Like, comment, subscribe**_
-_**2. 0 > 972?**_
-_**3. Leap year**_
+_**0. Multiple mains **_  
+_**1. Like, comment, subscribe**_  
+_**2. 0 > 972?**_  
+_**3. Leap year**_  
