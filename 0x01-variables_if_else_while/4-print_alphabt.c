@@ -7,14 +7,13 @@
 
 int main(void)
 {
-  char dsa;
+char dsa;
 
-  for (dsa = 97; dsa <= 122; dsa++)
-    {
-      if (dsa != 'q' && dsa != 'e')
-    putchar(dsa);
-    }
-  putchar(10);
-
-  return (0);
+for (dsa = 97; dsa <= 122; dsa++)
+{
+if (dsa != 'q' && dsa != 'e')
+putchar(dsa);
+}
+putchar (10);
+return (0);
 }
