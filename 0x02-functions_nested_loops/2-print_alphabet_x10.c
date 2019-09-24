@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * print_alphabet_10x - Continue point
- * Desc: printing_alphabet_10x
+ * print_alphabet_x10 - Continue point
+ * Desc: printing_alphabet_x10
  * Return: Always 0 (Success)
  */
 void print_alphabet_x10(void)
