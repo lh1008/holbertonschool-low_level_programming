@@ -15,25 +15,16 @@ void times_table(void)
 			i = x * y;
 			if (i < 10)
 			{
+				_putchar(' ');
 				_putchar(i + '0');
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
 			}
-			else if (i >= 10)
+			else
 			{
 				_putchar(i / 10 + '0');
 				_putchar(i % 10 + '0');
-				_putchar(',');
-				_putchar(' ');
 			}
-			/*
-			 *			if (i >= 10)
-			 *			{
-			 *	_putchar(i / 10 + '0');
-			 *	_putchar(i % 10 + '0');
-			 *	}
-			*/
+			_putchar(',');
+			_putchar(' ');
 		}
 		_putchar('\n');
 		x++;
