@@ -1,18 +1,18 @@
 #include "holberton.h"
 /**
- * print_line - Entry point
- * Desc: print_line
+ * print_diagonal - Entry point
+ * Desc: print_diagonal
  * @n: int type
  * Return: Always 0 (Success)
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
-
 	int x = 0;
 
 	while (x < n)
 	{
-		_putchar('_');
+		_putchar('\\');
+		_putchar('\n');
 		x++;
 	}
 	_putchar('\n');
