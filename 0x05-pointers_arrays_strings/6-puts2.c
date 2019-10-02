@@ -3,7 +3,6 @@
  * puts2 - Entry point
  * Desc: puts2
  * @str: char type
- * Return: Always 0 (Success)
  */
 void puts2(char *str)
 {
