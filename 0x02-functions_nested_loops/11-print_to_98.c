@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * print_to_98 - Entry point
  * Desc: print_to_98
@@ -7,30 +8,25 @@
  */
 void print_to_98(int n)
 {
-	if (n == 0)
+	int i;
+
+	if (n <= 98)
 	{
-		for (n = 0; n <= 98; n++)
+		for (i = n; i <= 98; i++)
 		{
-			if (n < 10)
-			{
-				_putchar(n + '0');
-			}
-			else
-			{
-				_putchar(n / 10 + '0');
-				_putchar(n % 10 + '0');
-			}
-			if (n != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+			if (i != n)
+				printf(", ");
+			printf("%d", i);
 		}
 	}
-	else if (n == 98)
+	else
 	{
-		_putchar(n / 10 + '0');
-		_putchar(n % 10 + '0');
+		for (i = n; i >= 98; i--)
+		{
+			if (i != n)
+				printf(", ");
+			printf("%d", i);
+		}
 	}
-	_putchar('\n');
+	printf("\n");
 }
