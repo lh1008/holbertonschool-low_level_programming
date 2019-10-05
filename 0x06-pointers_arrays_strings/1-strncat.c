@@ -4,6 +4,7 @@
  * Desc: _strncat
  * @dest: char type
  * @src: char type
+ * @n: int type
  * Return: char (dest)
  */
 char *_strncat(char *dest, char *src, int n)
