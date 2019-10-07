@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * int_strspn - Entry point
- * Desc: int_strspn
+ * _strspn - Entry point
+ * Desc: _strspn
  * @s: char type
  * @accept: char type
  * Return: lenght of a prefix susbtring
