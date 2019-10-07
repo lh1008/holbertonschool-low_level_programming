@@ -10,16 +10,19 @@ unsigned int _strspn(char *s, char *accept)
 {
 	int i = 0, x = 0, y = 0;
 
-	while (s[i] != ' ')
+	while (s[i] != '\0')
 	{
-		while (accept[x] != '0')
+		while (accept[x] != '\0')
 		{
-			if (s[i] != accept[x])
-				x++;
-			break;
+			if (s[i] == accept[x])
+				break;
+			x++;
 		}
+		if (s[i] != accept[x])
+			break;
+		x = 0;
 		i++;
 		y++;
 	}
-	return (y - 1);
+	return (y);
 }
