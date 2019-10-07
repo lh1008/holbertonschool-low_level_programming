@@ -1,6 +1,7 @@
 #include "holberton.h"
 /**
- * _memcpy - Entry point
+ * *_memcpy - Entry point
+ * Desc: _memcpy
  * @dest: char type
  * @src: char type
  * @n: unsigned int type
