@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * _strstr - Entry point
  * Desc: _strstr
@@ -22,5 +23,5 @@ char *_strstr(char *haystack, char *needle)
 			return (i);
 		haystack = i + 1;
 	}
-	return (0);
+	return (NULL);
 }
