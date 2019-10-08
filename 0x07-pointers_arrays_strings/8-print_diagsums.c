@@ -9,20 +9,18 @@
  **/
 void print_diagsums(int *a, int size)
 {
-	int x = 0, y = size - 1, first, second;
+	int i, j, first, second;
 
 	first = 0;
 	second = 0;
 
-	while (x < (size * size))
+	for (i = 0; i < (size * size); i += size + 1)
 	{
-		first += a[x];
-		x += size + 1;
+		first += a[i];
 	}
-	while (y < (size * size) - 1)
+	for (j = size - 1; j < (size * size) - 1; j += size - 1)
 	{
-		second += a[y];
-		y += a[y];
+		second += a[j];
 	}
 	printf("%d, %d\n", first, second);
 }
