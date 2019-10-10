@@ -12,7 +12,7 @@ int _sqrt_recursion(int n)
 
 /**
  * _sqrt_recur - Second entry
- * Desc: _sqrt_recur 
+ * Desc: _sqrt_recur
  * @n: int type
  * @i: int type
  * Return: i in square value
