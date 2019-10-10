@@ -10,6 +10,13 @@ int _sqrt_recursion(int n)
 	return (_sqrt_recur(n, 1));
 }
 
+/**
+ * _sqrt_recur - Second entry
+ * Desc: _sqrt_recur 
+ * @n: int type
+ * @i: int type
+ * Return: i in square value
+ **/
 int _sqrt_recur(int n, int i)
 {
 	if (n <= 0)
