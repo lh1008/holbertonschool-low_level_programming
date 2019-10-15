@@ -122,15 +122,6 @@ char *_strcpy(char *dest, char *src)
 
 }
 
-main.c/         1570818300  1000  1000  100664  147       `
-#include "holberton.h"
-
-int main(void)
-{
-	_puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
-	return (0);
-}
-
 _putchar.c/     1570808183  1000  1000  100664  247       `
 #include <unistd.h>
 
