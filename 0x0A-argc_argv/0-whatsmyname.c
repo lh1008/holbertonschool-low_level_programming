@@ -1,4 +1,3 @@
-#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -13,6 +12,7 @@ int main(int argc, char *argv[])
 	argc = 0;
 
 	printf("%s\n", argv[argc]);
+	(void)argc;
 
 	return (0);
 }
