@@ -7,19 +7,19 @@
  **/
 void rev_string(char *s)
 {
-	int counter = 0;
+	int counter = 0, second = 0, save;
 
 	while (s[counter] != '\0')
 	{
-		_putchar(s[counter]);
 		counter++;
 	}
-	_putchar('\n');
 	counter--;
-	while (s[counter - 1] >= 0)
+	while (second < counter)
 	{
-		_putchar(s[counter]);
+		save = s[second];
+		s[second] = s[counter];
+		s[counter] = save;
+		second++;
 		counter--;
 	}
-	_putchar('\n');
 }
