@@ -9,16 +9,17 @@
  **/
 int sum_listint(listint_t *head)
 {
+	listint_t *jar = head;
 	int sum;
 
 
 	if (head == NULL)
 		return (0);
 
-	while (head != NULL)
+	while (jar != NULL)
 	{
-		sum += (*head).n;
-		head = (*head).next;
+		sum += (*jar).n;
+		jar = (*jar).next;
 	}
 	return (sum);
 }
