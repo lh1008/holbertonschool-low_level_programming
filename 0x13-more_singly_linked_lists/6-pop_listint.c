@@ -12,17 +12,14 @@ int pop_listint(listint_t **head)
 	listint_t *jar;
 	unsigned int var;
 
+	if (*head == NULL)
+		return (0);
+
 	var = (*(*head)).n;
 
-	if (*head == NULL)
-	{
-		return (0);
-	}
-	else
-	{
-		jar = *head;
-		*head = ((*(*head)).next);
-		free(jar);
-	}
+	jar = *head;
+	*head = ((*(*head)).next);
+	free(jar);
+
 	return (var);
 }
