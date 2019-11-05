@@ -10,7 +10,7 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *jar;
-	int var;
+	unsigned int var;
 
 	var = (*(*head)).n;
 
