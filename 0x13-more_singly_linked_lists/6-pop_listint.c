@@ -13,7 +13,8 @@ int pop_listint(listint_t **head)
 	unsigned int var;
 
 	var = (*(*head)).n;
-
+	if (var == NULL)
+		return;
 	if (*head == NULL)
 		return (0);
 
