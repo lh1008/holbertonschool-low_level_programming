@@ -15,10 +15,14 @@ int pop_listint(listint_t **head)
 	var = (*(*head)).n;
 
 	if (*head == NULL)
+	{
 		return (0);
-
-	jar = *head;
-	*head = ((*(*head)).next);
-	free(jar);
+	}
+	else
+	{
+		jar = *head;
+		*head = ((*(*head)).next);
+		free(jar);
+	}
 	return (var);
 }
