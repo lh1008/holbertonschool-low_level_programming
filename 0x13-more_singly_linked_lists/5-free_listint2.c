@@ -12,7 +12,7 @@ void free_listint2(listint_t **head)
 	listint_t *jar;
 
 	if (head == NULL)
-		return ;
+		return;
 	while (*head != NULL)
 	{
 		jar = *head;
