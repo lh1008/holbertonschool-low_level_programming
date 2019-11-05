@@ -10,11 +10,13 @@ void free_list(list_t *head)
 {
 	list_t *jar;
 
-	while (head != NULL)
+	while ((*head).next != NULL)
 	{
 		jar = head;
 		head = (*head).next;
+		free((*jar).str);
 		free(jar);
 	}
+	free((*head).str);
 	free(head);
 }
