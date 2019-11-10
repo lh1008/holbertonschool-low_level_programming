@@ -8,7 +8,7 @@
  **/
 unsigned int binary_to_uint(const char *b)
 {
-	int i = 0, rem, sum = 0, x = 0;
+	int i = 0, sum = 0, x = 1;
 
 	if (b == NULL)
 		return (0);
@@ -20,11 +20,9 @@ unsigned int binary_to_uint(const char *b)
 	}
 	while (i > 0)
 	{
-		rem = i % 10;
-		sum += rem * _power(2, x);
-		i = i / 10;
+		sum += ((b[i - 1] - 48) * x);
+		x = x * 2;
 		i--;
 	}
-
 	return (sum);
 }
