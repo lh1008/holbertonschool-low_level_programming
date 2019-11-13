@@ -9,9 +9,10 @@
  **/
 int set_bit(unsigned long int *n, unsigned int index)
 {
+	unsigned long int mask = 1;
+
 	if (index > (8 * sizeof(unsigned int)))
 		return (-1);
-	unsigned long int mask = 1;
 
 	mask = mask << index;
 	*n = *n | mask;
