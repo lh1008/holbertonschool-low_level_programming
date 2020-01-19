@@ -27,5 +27,7 @@ int main(void)
 	printf("{ key : %s, value : %s}\n", (ht->array[index])->key, (ht->array[index])->value);
 	hash_table_set(ht, "mentioner", "making_down");
 	printf("{ key : %s, value : %s}\n", (ht->array[index])->key, (ht->array[index])->value);
+	hash_table_set(ht, "", "making_down");
+	printf("{ key : %s, value : %s}\n", (ht->array[index])->key, (ht->array[index])->value);
 	return (EXIT_SUCCESS);
 }
