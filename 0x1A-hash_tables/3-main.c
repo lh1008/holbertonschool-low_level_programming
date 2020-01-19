@@ -26,11 +26,6 @@ int main(void)
 	hash_table_set(ht, "hetairas", "making_right");
 	printf("{ key : %s, value : %s}\n", (ht->array[index])->key, (ht->array[index])->value);
 	hash_table_set(ht, "mentioner", "making_down");
-	printf("{ key : %s, value : %s}\n", (ht->array[0])->key, (ht->array[0])->value);
-	index = key_index((const unsigned char *) "a", ht->size);
-	printf("%lu\n", index);
-	hash_table_set(ht,(const char *) "a", "space");
 	printf("{ key : %s, value : %s}\n", (ht->array[index])->key, (ht->array[index])->value);
-	printf("%lu\n", index);
 	return (EXIT_SUCCESS);
 }
