@@ -1,0 +1,7 @@
+all: compile_gcc
+
+CC = gcc
+SRC = main.c holberton.c
+
+compile_gcc:
+	${CC} ${SRC} -o holberton
