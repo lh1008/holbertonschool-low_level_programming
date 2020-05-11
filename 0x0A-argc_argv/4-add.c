@@ -9,25 +9,20 @@
  **/
 int main(int argc, char *argv[])
 {
-	int i, add = 0;
+	int i, j, add = 0;
 
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (argv[i] == ('A' >= 'Z'))
+			for (j = 0; argv[i][j] != '\0'; j++)
 			{
-				printf("Error\n");
-				return (1);
+				if (argv[i][j] < 48 || argv[i][j] > 57)
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
-			else if (argv[i] == ('a' >= 'z'))
-			{
-				printf("Error\n");
-				return (1);
-			}
-		}
-		for (i = 1; i < argc; i++)
-		{
 			add += atoi(argv[i]);
 		}
 		printf("%d\n", add);
