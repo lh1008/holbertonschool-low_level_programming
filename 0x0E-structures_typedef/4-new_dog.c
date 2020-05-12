@@ -45,9 +45,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(box_name);
 		return (NULL);
 	}
+	for (n_l = 0; name[n_l] != '\0'; n_l++)
+		box_name[n_l] = name[n_l];
+	for (o_l = 0; owner[o_l] != '\0'; o_l++)
+		box_owner[o_l] = owner[o_l];
 
-	size->name = name;
+	size->name = box_name;
 	size->age = age;
-	size->owner = owner;
+	size->owner = box_owner;
 	return (size);
 }
