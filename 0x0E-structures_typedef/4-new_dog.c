@@ -13,6 +13,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	struct dog *size;
 	char *box_name, *box_owner;
+	int n_l = 0, o_l = 0;
 
 	if (name == NULL && owner == NULL)
 		return (NULL);
@@ -24,14 +25,20 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	box_name = malloc(sizeof(char *));
+	while (name[n_l] != '\0')
+		n_l++;
+
+	box_name = malloc(sizeof(char *) * n_l);
 	if (box_name == NULL)
 	{
 		free(size);
 		return (NULL);
 	}
 
-	box_owner = malloc(sizeof(char *));
+	while (owner[o_l] != '\0')
+		o_l++;
+
+	box_owner = malloc(sizeof(char *) * o_l);
 	if (box_owner == NULL)
 	{
 		free(size);
