@@ -24,14 +24,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	box_name = malloc(sizeof(char*));
+	box_name = malloc(sizeof(char *name));
 	if (box_name == NULL)
 	{
 		free(size);
 		return (NULL);
 	}
 
-	box_owner = malloc(sizeof(char*));
+	box_owner = malloc(sizeof(char *owner));
 	if (box_owner == NULL)
 	{
 		free(size);
